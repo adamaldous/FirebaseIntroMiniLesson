@@ -22,6 +22,8 @@
 		9639B1D41C84E52300418D8E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639B1D31C84E52300418D8E /* CFNetwork.framework */; };
 		9639B1D61C84E52D00418D8E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639B1D51C84E52D00418D8E /* libc++.tbd */; };
 		9639B1D81C84E53B00418D8E /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639B1D71C84E53B00418D8E /* libicucore.tbd */; };
+		9639B1DB1C84E5E200418D8E /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639B1DA1C84E5E200418D8E /* FirebaseController.swift */; };
+		9639B1DF1C84E6F100418D8E /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9639B1DE1C84E6F100418D8E /* RestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		9639B1D31C84E52300418D8E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9639B1D51C84E52D00418D8E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9639B1D71C84E53B00418D8E /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9639B1DA1C84E5E200418D8E /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		9639B1DE1C84E6F100418D8E /* RestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantController.swift; path = ../RestaurantController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,16 +116,11 @@
 		83F3C8E41C84BC1A005D37A4 = {
 			isa = PBXGroup;
 			children = (
-				9639B1D71C84E53B00418D8E /* libicucore.tbd */,
-				9639B1D51C84E52D00418D8E /* libc++.tbd */,
-				9639B1D31C84E52300418D8E /* CFNetwork.framework */,
-				9639B1D11C84E51800418D8E /* Security.framework */,
-				9639B1CF1C84E51000418D8E /* SystemConfiguration.framework */,
 				83F3C8EF1C84BC1A005D37A4 /* FirebaseIntroMiniLesson */,
 				83F3C9041C84BC1A005D37A4 /* FirebaseIntroMiniLessonTests */,
 				83F3C90F1C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests */,
 				83F3C8EE1C84BC1A005D37A4 /* Products */,
-				9639B1CA1C84E4AC00418D8E /* Firebase.framework */,
+				9639B1D91C84E57500418D8E /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,7 +139,9 @@
 			children = (
 				83F3C8F41C84BC1A005D37A4 /* Main.storyboard */,
 				83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */,
+				9639B1DE1C84E6F100418D8E /* RestaurantController.swift */,
 				83F3C9201C84BFD3005D37A4 /* Restaurant.swift */,
+				9639B1DA1C84E5E200418D8E /* FirebaseController.swift */,
 				83F3C8F01C84BC1A005D37A4 /* AppDelegate.swift */,
 				83F3C8F71C84BC1A005D37A4 /* Assets.xcassets */,
 				83F3C8F91C84BC1A005D37A4 /* LaunchScreen.storyboard */,
@@ -165,6 +166,19 @@
 				83F3C9121C84BC1A005D37A4 /* Info.plist */,
 			);
 			path = FirebaseIntroMiniLessonUITests;
+			sourceTree = "<group>";
+		};
+		9639B1D91C84E57500418D8E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				9639B1D71C84E53B00418D8E /* libicucore.tbd */,
+				9639B1D51C84E52D00418D8E /* libc++.tbd */,
+				9639B1D31C84E52300418D8E /* CFNetwork.framework */,
+				9639B1D11C84E51800418D8E /* Security.framework */,
+				9639B1CF1C84E51000418D8E /* SystemConfiguration.framework */,
+				9639B1CA1C84E4AC00418D8E /* Firebase.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9639B1DB1C84E5E200418D8E /* FirebaseController.swift in Sources */,
 				83F3C91F1C84BCBF005D37A4 /* RestaurantListTableViewController.swift in Sources */,
 				83F3C8F11C84BC1A005D37A4 /* AppDelegate.swift in Sources */,
 				83F3C9211C84BFD3005D37A4 /* Restaurant.swift in Sources */,
+				9639B1DF1C84E6F100418D8E /* RestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
